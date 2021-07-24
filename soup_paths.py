@@ -1,7 +1,7 @@
 '''Module responsible for defining BeautifulSoup paths'''
 REQUEST_VIDEO_PATHS = {
-    'title':{'tag': 'span',
-             'attrs': {'class': 'watch-title'}},
+    'title':{'tag': 'yt-formatted-string',
+             'attrs': {'class': 'style-scope ytd-video-primary-info-renderer'}},
     'channel_name': {'tag':'script',
                      'attrs': {'type': 'application/ld+json'}},
     'number_of_views': {'tag': 'div',

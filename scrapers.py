@@ -33,7 +33,9 @@ class RequestsScraper(Scraper):
         Args:
             url (string): Link to the webpage
         '''
-        self.response = requests.get(url, headers=self.headers)
+        self.response = requests.get(url, headers=self.headers, cookies={'CONSENT': 'YES+1'})
+        print(self.response.text)
+
 
     @property
     def text(self):
